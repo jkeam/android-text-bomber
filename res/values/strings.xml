@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="input_message_hint">Payload</string>
+    <string name="app_name">TextBomber</string>
+    <string name="input_number_hint">#txt</string>
+    <string name="input_contact_hint">Contact</string>
+    <string name="button_text">Fire</string>
+</resources>

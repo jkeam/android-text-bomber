@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#ffffffff">
+
+	<!-- Contact -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+	>
+		<!-- 
+		<EditText android:id="@+id/input_contact"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:visibility="visible" android:hint="@string/input_contact_hint" />
+		 -->
+		 <AutoCompleteTextView android:id="@+id/input_contact"
+		 	android:layout_width="fill_parent" android:layout_height="wrap_content"
+		 	android:visibility="visible" 
+		 	android:completionThreshold="1"
+		 	android:hint="@string/input_contact_hint"
+		 	android:lines="1"
+		 />
+	</LinearLayout>
+
+	<!-- Input fields -->
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_gravity="bottom"
+		android:gravity="bottom"
+	>
+		
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+			
+			<EditText android:id="@+id/input_message"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight=".20"
+				android:visibility="visible" android:hint="@string/input_message_hint" 
+			/>
+
+			<EditText android:id="@+id/input_number"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight=".80"
+				android:visibility="visible" android:hint="@string/input_number_hint"
+				android:inputType="number" android:maxLength="3" 
+			/>
+		</LinearLayout>
+
+		<Button android:id="@+id/button_send" android:text="@string/button_text"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_gravity="bottom" />
+	</LinearLayout>
+</LinearLayout>
